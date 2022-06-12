@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selectors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            background: #192a56;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            transition: all 0.3s linear;
+            font-size: 3rem;
+        }
+
+        a:link {
+            color: #fff;
+        }
+
+        a:hover {
+            color: #192a56;
+            background: #fff;
+        }
+
+        a:active {
+            color: yellow;
+            background: #fff;
+        }
+
+        a:visited {
+            color: red;
+            background: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <a href="#">Jiwan Technical</a>
+    </div>
+
+    <!-- 
+        :link - Selector is used to select unvisited links.
+
+        :visited - Selects links that have already been visited by the current browser.
+
+        :hover - When the mouse cursor rolls over a link, that link is in it's hover state and this will select it.
+
+        :active - Selects the link while it is being activated (being clicked on or otherwise activated).
+     -->
+</body>
+</html>

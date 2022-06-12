@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Pseudo Elements</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_div {
+            height: 100vh;
+            width: 100vw;
+            background: #40407a;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        .center_div {
+            width: 70vw;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.5rem;
+            line-height: 30px;
+            font-weight: lighter;
+        }
+
+        p.first-child::first-letter {
+            color: yellow;
+            font-size: 8rem;
+            float: left;
+            display: block;
+            margin: 0 15px 0 0;
+            line-height: 0.8;
+            font-weight: bold;
+        }
+
+        p.first-child::first-line {
+            color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_div">
+        <div class="center_div">
+            <p class="first-child">
+                Jiwan Chaudhary also known as Chaudhary Technical. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo dolor quo, qui ipsam nihil hic reprehenderit. Aperiam similique ipsa rerum molestiae! Porro ea dolores dolor laudantium facilis consectetur veritatis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem consequuntur dolores voluptates error, voluptate neque voluptatem reiciendis! Numquam, maiores minus.
+            </p>
+            <br>
+            <p>
+                Jiwan Chaudhary also known as Chaudhary Technical. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam laborum quis tempore doloremque rerum deleniti, tenetur vel dolorem ad non explicabo voluptatem. Incidunt minima eum cumque praesentium ipsam quidem voluptatem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, dolores dolorum enim laudantium illo ipsa assumenda voluptatum quis omnis eum!
+            </p>
+            <br>
+            <p>
+                Jiwan Chaudhary also known as Chaudhary Technical. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et quidem distinctio, odit aliquid, impedit fugiat suscipit similique sunt ipsa vero aut asperiores veritatis quia mollitia! Perferendis distinctio aut veritatis eius. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, molestiae rem. Hic consequatur ut cupiditate laborum modi neque praesentium illo.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

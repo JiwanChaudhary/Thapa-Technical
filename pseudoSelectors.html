@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_header {
+            height: 100vh;
+            width: 100vw;
+            background: rgb(7, 201, 175);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            flex-direction: column;
+        }
+
+        .main_header * {
+            padding-top: 5px;
+        }
+
+        
+        li:nth-child(2n) {
+            color: #9b59b6;
+        }
+        
+        li:nth-child(2n+1) {
+            color: #e74c3c;
+        }
+
+        li:first-child {
+            color: #3498db;
+        }
+
+        li:last-child {
+            color: #0652DD;
+        }
+
+        li:nth-child(6) {
+            color: #833471;
+        }
+        </style>
+</head>
+<body>
+    <div class="main_header">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+            <li>four</li>
+            <li>five</li>
+            <li>six</li>
+            <li>seven</li>
+            <li>eight</li>
+            <li>nine</li>
+            <li>ten</li>
+        </ul>
+    </div>
+
+    <!-- 
+        :first-child - Selects the first element within a parent
+
+        :last-child - Selects the last element within a parent
+
+        :nth-child() - Selects elements based on a simple provided algebric expression (e.g. "2n" or "4n-1"). Has the ability to do things like select even/odd elements, "every third", "the first five", and things like that.
+     -->
+</body>
+</html>

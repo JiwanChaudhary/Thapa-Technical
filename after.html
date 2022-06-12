@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <style>
+        :root {
+            --width: 100vw;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_div {
+            width: var(--width);
+            height: 100vh;
+            background: #fff;
+            color: rgb(13, 143, 194);
+            padding-top: 100px;
+            text-align: center;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            font-family: 'Grenze Gotisch', cursive;
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        h1:after {
+            content: "\f005";
+            font-family: "Font Awesome 5 Free";
+            font-style: normal;
+            font-weight: normal;
+            width: calc(var(--width) - 80vw);
+            height: 25px;
+            color: #1abc9c;
+            font-size: 3rem;
+            display: block;
+            margin: 0 auto;
+            border-bottom: 5px solid #3498db;
+        }
+
+        @media (max-width: 998px) {
+            h1 {
+                font-size: 4rem;
+            }
+
+            h1::after {
+            width: calc(var(--width) - 70vw);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            h1::after {
+                height: 16px;
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main_div">
+        <h1>thapa technical</h1>
+    </div>
+    
+</body>
+</html>
